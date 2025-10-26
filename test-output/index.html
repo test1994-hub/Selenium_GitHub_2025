@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-LoginSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LoginSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testVolidLogin">testVolidLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LoginSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testVolidLogin(admin@yourstore.com, admin)">testVolidLogin(admin@yourstore.com, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LoginSuite -->
@@ -126,9 +126,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVolidLogin">
-                  </a> <!-- testVolidLogin -->
+                  <a name="testVolidLogin(admin@yourstore.com, admin)">
+                  </a> <!-- testVolidLogin(admin@yourstore.com, admin) -->
                   <span class="method-name">testVolidLogin</span>
+                  <span class="parameters">(admin@yourstore.com,admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,6 +145,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;LoginSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginTests&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;admin@yourstore.com&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
@@ -189,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testVolidLogin')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 649);
+data.setCell(0, 3, 2867);
 window.suiteTableData['LoginSuite']= { tableData: data, tableDiv: 'times-div-LoginSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 649 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-LoginSuite">
               </div> <!-- times-div-LoginSuite -->
             </div> <!-- times-div -->
@@ -221,18 +224,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">192 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testVolidLogin</span>
-                <span class="method-start">2067 ms</span>
+                <span class="method-name">testVolidLogin(admin@yourstore.com, admin)</span>
+                <span class="method-start">2779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">2719 ms</span>
+                <span class="method-name">tearDown([TestResult name=testVolidLogin status=SUCCESS method=LoginTest.testVolidLogin(java.lang.String,java...)</span>
+                <span class="method-start">5646 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardownReport</span>
+                <span class="method-start">5826 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
